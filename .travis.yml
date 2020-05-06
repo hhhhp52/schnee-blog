@@ -8,7 +8,12 @@ install:
 
 script:
   - yarn
+  - touch .env.development
+  - echo "CONTENTFUL_SPACE_ID="$CONTENTFUL_SPACE_ID  >> .env.development
+  - echo "CONTENTFUL_ACCESS_TOKEN="$CONTENTFUL_ACCESS_TOKEN  >> .env.development
+  - cat .env.development
   - yarn run build
+  - rm -rf .env.development
 
 deploy:
   provider: pages
