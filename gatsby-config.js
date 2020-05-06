@@ -2,6 +2,8 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+const getenv = require('getenv');
+
 const contentfulConfig = {
   spaceId: getenv.strint("CONTENTFUL_SPACE_ID"),
   accessToken: getenv.string("CONTENTFUL_ACCESS_TOKEN"),
