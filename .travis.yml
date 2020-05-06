@@ -10,4 +10,11 @@ install:
 script:
   - yarn
   - yarn run build
-  - yarn run deploy
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local-dir: public
+  repo: hhhhp52/schnee-blog
+  target_branch: gh-pages
