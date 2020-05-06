@@ -8,5 +8,6 @@ install:
 
 script:
   - yarn
+  - yarn run setup
   - yarn run build
   - yarn run deploy
