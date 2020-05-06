@@ -5,7 +5,7 @@ require('dotenv').config({
 const getenv = require('getenv');
 
 const contentfulConfig = {
-  spaceId: getenv.strint("CONTENTFUL_SPACE_ID"),
+  spaceId: getenv.string("CONTENTFUL_SPACE_ID"),
   accessToken: getenv.string("CONTENTFUL_ACCESS_TOKEN"),
 }
 
