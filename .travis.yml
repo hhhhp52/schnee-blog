@@ -5,6 +5,7 @@ node_js:
 
 install:
   - yarn install
+  - yarn instala getenv
 
 script:
   - yarn
